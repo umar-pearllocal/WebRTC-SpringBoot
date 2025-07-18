@@ -1,4 +1,4 @@
-FROM frolvlad/alpine-oraclejdk8:slim
+FROM azul/zulu-openjdk:23-latest
 VOLUME /tmp
 ARG DEPENDENCY
 COPY ${DEPENDENCY}/BOOT-INF/lib /app/lib

@@ -9,6 +9,8 @@ import org.springframework.web.socket.config.annotation.EnableWebSocket;
 public class Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
+		SpringApplication app = new SpringApplication(Application.class);
+		app.setAllowBeanDefinitionOverriding(true);
+		app.run(args);
 	}
 }
